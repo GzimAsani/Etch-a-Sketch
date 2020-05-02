@@ -1,0 +1,61 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "canvas" "buttons";
+    place-content: center;
+}
+
+
+#sketchContainer{
+    display: center;
+    justify-content: center;
+    grid-area: canvas;
+    height: 50vw;
+    width: 50vw;
+    justify-self: center;
+    border: 4 px solid black;
+    
+}
+
+#controlContainer{
+    grid-area: header;
+    justify-self: center;
+}
+
+#h1{
+    place-content: center;
+    display: grid;
+    background-color: rgb(28, 88, 20);
+    height: 70px;
+}
+
+#controlContainer button {
+    background: transparent;
+    border: 2 px solid black;
+    font-size: 2.0vw;
+}
+
+#controlContainer button:hover{
+    background: rgb(164, 179, 177);
+}
+
+#controlCOntainer select:hover{
+    background: rgb(164, 179, 177);
+}
+
+#controlContainer select {
+    background: transparent;
+    border: 12 px solid black;
+    font-size: 2.0vw;
+}
+
+footer {
+    background-color: rgb(164, 179, 177);
+    margin: 13px;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
